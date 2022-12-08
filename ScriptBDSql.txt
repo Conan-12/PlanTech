@@ -1,0 +1,64 @@
+create database PlanTech;
+
+use PlanTech;
+
+create table Usuario ( id_Usuario integer PRIMARY KEY,
+nom_Usuario varchar (10) not null,
+contraseña varchar (12) not null);
+
+create table Usuario_Sesion ( id_usuario integer not null,
+sesion bit not null);
+
+ALTER TABLE Usuario_Sesion
+ADD FOREIGN KEY (id_usuario)
+REFERENCES Usuario (id_usuario)
+ON DELETE CASCADE
+ON UPDATE CASCADE;
+
+create table Especie ( id_Especie integer PRIMARY KEY,
+nom varchar (40) not null,
+temp integer not null,
+horas_luz integer not null,
+humedad integer not null);
+
+create table Planta ( id_Planta integer PRIMARY KEY,
+id_Especie integer not null,
+fecha date);
+
+ALTER TABLE Planta
+ADD FOREIGN KEY (id_Especie)
+REFERENCES Especie (id_Especie)
+ON DELETE CASCADE
+ON UPDATE CASCADE;
+
+create table Grupo ( id_Grupo integer PRIMARY KEY,
+nombre varchar (40),
+fecha date);
+
+create table Grupo_Planta ( id_Grupo integer not null,
+id_Planta integer not null);
+
+ALTER TABLE Grupo_Planta
+ADD FOREIGN KEY (id_Grupo)
+REFERENCES Grupo (id_Grupo)
+ON DELETE CASCADE
+ON UPDATE CASCADE;
+
+ALTER TABLE Grupo_Planta
+ADD FOREIGN KEY (id_Planta)
+REFERENCES Planta (id_Planta)
+ON DELETE CASCADE
+ON UPDATE CASCADE;
+
+create table Registro ( id_Registro integer PRIMARY KEY,
+momento datetime not null,
+id_Planta integer not null,
+temp integer not null,
+horas_luz integer not null,
+humedad integer not null);
+
+ALTER TABLE Registro
+ADD FOREIGN KEY (id_Planta)
+REFERENCES Planta (id_Planta)
+ON DELETE CASCADE
+ON UPDATE CASCADE;
