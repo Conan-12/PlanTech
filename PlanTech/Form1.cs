@@ -55,6 +55,11 @@ namespace PlanTech
                 Thread.Sleep(1000);
             }
         }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            label1.Text = "non";
+        }
     }
 }
 
