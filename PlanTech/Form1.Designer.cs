@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -44,16 +44,6 @@
             this.panel1.Size = new System.Drawing.Size(1347, 726);
             this.panel1.TabIndex = 0;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(288, 45);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(178, 108);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "XD";
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::PlanTech.Properties.Resources._200w;
@@ -62,6 +52,17 @@
             this.pictureBox1.Size = new System.Drawing.Size(208, 162);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(10, 8);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(794, 216);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Viva Amlo, Asuka\r\n y el niño Jesus";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form1
             // 
