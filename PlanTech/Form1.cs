@@ -58,7 +58,9 @@ namespace PlanTech
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            label1.Text = "non";
+            int i = 0;
+            i *= i;
+            label1.Text = i.ToString();
         }
     }
 }
