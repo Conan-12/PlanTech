@@ -62,6 +62,16 @@ namespace PlanTech
             i *= i;
             label1.Text = i.ToString();
         }
+
+        private void num1_Click(object sender, EventArgs e)
+        {
+            textBox1.Text += "1";
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            textBox1.Text += "2";
+        }
     }
 }
 
