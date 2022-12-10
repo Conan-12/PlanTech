@@ -27,7 +27,7 @@ namespace PlanTech
             thread.Start();
             */
 
-            panel1.Controls.Add(new UserControl1());
+            panel1.Controls.Add(new Login());
 
         }
         
@@ -56,22 +56,6 @@ namespace PlanTech
             }
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            int i = 0;
-            i *= i;
-            label1.Text = i.ToString();
-        }
-
-        private void num1_Click(object sender, EventArgs e)
-        {
-            textBox1.Text += "1";
-        }
-
-        private void button9_Click(object sender, EventArgs e)
-        {
-            textBox1.Text += "2";
-        }
     }
 }
 
