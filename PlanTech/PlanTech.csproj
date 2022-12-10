@@ -127,6 +127,12 @@
     <Compile Include="Vista\UserControl1.Designer.cs">
       <DependentUpon>UserControl1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista\Ventana.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Vista\Ventana.Designer.cs">
+      <DependentUpon>Ventana.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -142,6 +148,9 @@
     </Compile>
     <EmbeddedResource Include="Vista\UserControl1.resx">
       <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Ventana.resx">
+      <DependentUpon>Ventana.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
